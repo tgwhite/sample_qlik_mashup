@@ -1,0 +1,20 @@
+{
+  "name": "simple_ticket_mashup",
+  "version": "1.0.0",
+  "description": "An example of a Qlik mashup, served by node/express that uses Qlik's ticket API for authentication",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Taylor G. White",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "path": "^0.12.7",
+    "request": "^2.87.0"
+  }
+}
