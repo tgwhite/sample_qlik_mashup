@@ -75,7 +75,7 @@ function getTicket(dir, user, attr) {
 	return new Promise(function(resolve, reject) {
 		// ticket_proxy is a prefix for a virtual proxy that was set up in the Qlik Management Console (QMC) before running this code
 		// if running on localhost, make sure that localhost has been whitelisted and the Access-Control-Allow-Origin header has been set. 
-		
+
 		r.post({
 			uri: 'https://' + engineUrl + ':4243/qps/ticket_proxy/ticket?xrfkey=abcdefghijklmnop',
 			body: b,
@@ -100,8 +100,9 @@ function getTicket(dir, user, attr) {
 app.use('/', router);
 
 // run the http and https servers 
-var httpServer = http.createServer(app);
+// var httpServer = http.createServer(app); // for http servers
 var httpsServer = https.createServer(credentials, app);
 
-httpServer.listen(5000);
+console.log('Listening on https://localhost:3000...');
+// httpServer.listen(5000); // for http servers
 httpsServer.listen(3000); //https server listens on port 3000
