@@ -6,13 +6,13 @@ This repository contains an example Qlik Sense mashup. It uses node/express.js a
 ## Getting Started
 
 ### Virtual Proxy
-Create a (virtual_proxy)[https://help.qlik.com/en-US/sense/June2018/Subsystems/ManagementConsole/Content/create-virtual-proxy.htm] using Qlik's management console (the QMC). This virtual proxy should use ticket authentication and it should whitelist "localhost". It should also use a redirect url of "https://localhost:3000". Make sure to also add "https://localhost:3000" to your Access-Control-Allow-Origin header within the advanced section. 
+Create a [virtual_proxy](https://help.qlik.com/en-US/sense/June2018/Subsystems/ManagementConsole/Content/create-virtual-proxy.htm) using Qlik's management console (the QMC). This virtual proxy should use ticket authentication and it should whitelist "localhost". It should also use a redirect url of "https://localhost:3000". Make sure to also add "https://localhost:3000" to your Access-Control-Allow-Origin header within the advanced section. 
 
 ### Stub HTML
-Upload app_login.html (in this repository) to Qlik Sense's default content library. (Here)(https://help.qlik.com/en-US/sense/June2018/Subsystems/ManagementConsole/Content/upload-objects-to-content-libraries.htm) is a how-to guide. 
+Upload app_login.html (in this repository) to Qlik Sense's default content library. [Here](https://help.qlik.com/en-US/sense/June2018/Subsystems/ManagementConsole/Content/upload-objects-to-content-libraries.htm) is a how-to guide. 
 
 ### Export Qlik certificates
-Follow this (guide)[https://help.qlik.com/en-US/sense/June2018/Subsystems/ManagementConsole/Content/export-certificates.htm] to export certificates. Make sure to use a .pem format and do not use a password (this code does not expect a password). 
+Follow this [guide](https://help.qlik.com/en-US/sense/June2018/Subsystems/ManagementConsole/Content/export-certificates.htm) to export certificates. Make sure to use a .pem format and do not use a password (this code does not expect a password). 
 
 ### Get and update this code
 Use git to clone this repository. Open a command prompt in this location and run `npm install`
